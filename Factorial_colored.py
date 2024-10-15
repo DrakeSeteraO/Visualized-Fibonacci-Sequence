@@ -47,7 +47,7 @@ if __name__ == "__main__":
     
     print('1')
     base = gray # change this to the scale you want to visualize the Fibonacci sequence in
-    f = fibonacci(10000) # change the number in this to the Fibonacci number to solve for
+    f = fibonacci(69000) # change the number in this to the Fibonacci number to solve for
     fi = pixel_len(f, base)
     width = m.floor(fi ** (1/2))
     height = m.ceil(fi / width)
@@ -64,4 +64,5 @@ if __name__ == "__main__":
             h += 1
 
     print('3')
+    img = img.rotate(180)
     img.show()
